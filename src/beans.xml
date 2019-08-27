@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- <bean id="JG" class="com.path.Person">
+		<property name="id" value="1" />
+		<property name="name" value="James Gosling" />
+	</bean> -->
+
+	<bean id="DR" class="com.path.Person">
+		<constructor-arg index="0" value="2"/>
+		<constructor-arg index="1" value="Retchie"/>
+		<constructor-arg index="2" ref="Addr"/>
+	</bean>
+	
+	<!-- <bean id="AK" class="com.path.Person">
+		<constructor-arg type="int" value="3"/>
+		<constructor-arg type="java.lang.String" value="Kay"/>
+	</bean> -->
+	
+	<bean id="Addr" class="com.path.Address">
+		<constructor-arg index="0" value="76, Mall Road"/>
+		<constructor-arg index="1" value="Mhow"/>
+		<constructor-arg index="2" value="422441"/>
+	</bean>
+
+</beans>
