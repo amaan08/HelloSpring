@@ -42,6 +42,10 @@ public class HelloSpring {
 		VehicleFare vFare = (VehicleFare) context.getBean("VF");
 		
 		System.out.println(vFare);
+		
+		Toll toll = (Toll) context.getBean("TP");
+		
+		System.out.println(toll);
 	}
 
 }

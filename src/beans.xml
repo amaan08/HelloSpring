@@ -76,5 +76,14 @@
 		</constructor-arg>
 	</bean>
 	
+	<bean id="TP" class="com.path.Toll">
+		<property name="tollProp">
+			<props>
+				<prop key="id">07</prop>
+				<prop key="name">Mehra</prop>
+			</props>
+		</property>
+	</bean>
+	
 
 </beans>
